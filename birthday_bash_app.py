@@ -1,6 +1,6 @@
 import streamlit as st
 from assets import (
-    ICON_FISH, ICON_CARDS, ICON_CHAMPAGNE, ICON_RAFT, ICON_PLANE,
+    ICON_FISH, ICON_RAFT, ICON_PLANE, ICON_BURGER, ICON_MOUNTAIN,
 )
 from styles import CSS
 
@@ -27,13 +27,6 @@ def render_hero():
         <div class="hero-title">Sarah &amp; Willy's<br><em>30th Birthday Bash</em></div>
         <div class="gold-line"></div>
         <div class="hero-sub">August 5 &#8211; 9, 2026</div>
-        <div class="pill-row">
-          <span class="pill">Cookout</span>
-          <span class="pill">Ski Valley Dinner</span>
-          <span class="pill">River Float</span>
-          <span class="pill">Fly Fishing</span>
-          <span class="pill">Choose Your Own Adventure</span>
-        </div>
       </div>
     </div>
     """, unsafe_allow_html=True)
@@ -52,7 +45,7 @@ def render_days():
         </div>
       </div>
       <div class="icon-col">
-        {ICON_CHAMPAGNE}
+        {ICON_BURGER}
         <div class="icon-label">House cookout</div>
       </div>
     </div>
@@ -62,8 +55,8 @@ def render_days():
     st.markdown(f"""
     <div class="day-row">
       <div class="icon-col">
-        {ICON_CARDS}
-        <div class="icon-label">Ski valley dinner</div>
+        {ICON_MOUNTAIN}
+        <div class="icon-label">Explore Jackson</div>
       </div>
       <div class="content-right">
         <div class="day-name">Thursday, August 6</div>
@@ -125,6 +118,14 @@ def render_days():
     st.markdown('</div>', unsafe_allow_html=True)
 
 
+def render_childcare_note():
+    st.markdown("""
+    <div class="childcare-note">
+      <p>Children are welcome. Please give us a heads up if you plan to bring them &#8212; we'll arrange child care.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+
 def render_footer():
     st.markdown("""
     <div class="footer-block">
@@ -139,6 +140,7 @@ def main():
     st.markdown(CSS, unsafe_allow_html=True)
     render_hero()
     render_days()
+    render_childcare_note()
     render_footer()
 
 

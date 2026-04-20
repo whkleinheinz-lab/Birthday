@@ -210,3 +210,27 @@ ICON_PLANE = """<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" styl
     <path d="M0,-18 C4,-14 6,-6 6,0 L6,4 L18,10 L18,13 L6,10 L6,14 L10,16 L10,18 L0,16 L-10,18 L-10,16 L-6,14 L-6,10 L-18,13 L-18,10 L-6,4 L-6,0 C-6,-6 -4,-14 0,-18 Z" fill="#4a6a8a" stroke="#3a5a7a" stroke-width="0.5"/>
   </g>
 </svg>"""
+
+ICON_BURGER = """<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="width:72px;height:72px;">
+  <ellipse cx="40" cy="40" rx="34" ry="34" fill="#f0ebe0" stroke="#c8b882" stroke-width="0.5"/>
+  <path d="M20,38 Q20,22 40,22 Q60,22 60,38 Z" fill="#d4a060" stroke="#a87838" stroke-width="0.8"/>
+  <ellipse cx="30" cy="30" rx="1.6" ry="1" fill="#f0e4c4" transform="rotate(-25,30,30)"/>
+  <ellipse cx="38" cy="26" rx="1.6" ry="1" fill="#f0e4c4" transform="rotate(10,38,26)"/>
+  <ellipse cx="46" cy="27" rx="1.6" ry="1" fill="#f0e4c4" transform="rotate(-5,46,27)"/>
+  <ellipse cx="52" cy="32" rx="1.6" ry="1" fill="#f0e4c4" transform="rotate(20,52,32)"/>
+  <path d="M18,40 Q22,37 26,40 Q30,43 34,40 Q38,37 42,40 Q46,43 50,40 Q54,37 58,40 Q62,43 62,44 L62,46 Q54,46 46,46 Q38,46 30,46 Q22,46 18,46 Z" fill="#7aa85a" stroke="#5a8a3a" stroke-width="0.6"/>
+  <path d="M22,44 L58,44 L56,50 L24,50 Z" fill="#f0c040" stroke="#c89828" stroke-width="0.5"/>
+  <rect x="20" y="48" width="40" height="7" rx="2" fill="#6a3820" stroke="#4a2818" stroke-width="0.6"/>
+  <path d="M20,54 L60,54 Q62,54 62,56 L62,60 Q62,62 60,62 L20,62 Q18,62 18,60 L18,56 Q18,54 20,54 Z" fill="#c89050" stroke="#a87838" stroke-width="0.8"/>
+</svg>"""
+
+ICON_MOUNTAIN = """<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="width:72px;height:72px;">
+  <ellipse cx="40" cy="40" rx="34" ry="34" fill="#f0ebe0" stroke="#c8b882" stroke-width="0.5"/>
+  <circle cx="56" cy="26" r="5" fill="#e8b848" opacity="0.85"/>
+  <circle cx="56" cy="26" r="3" fill="#f0d078" opacity="0.9"/>
+  <path d="M14,62 L32,30 L48,56 L14,62 Z" fill="#5a7a4a" stroke="#3a5a2a" stroke-width="0.6"/>
+  <path d="M28,36 L32,30 L36,38 L34,38 L32,35 L30,38 Z" fill="#fdfcf8"/>
+  <path d="M24,62 L46,22 L66,62 Z" fill="#4a6a3a" stroke="#2a4a1a" stroke-width="0.6"/>
+  <path d="M40,32 L46,22 L52,32 L50,32 L48,28 L46,30 L44,28 L42,32 Z" fill="#fdfcf8"/>
+  <path d="M12,62 L68,62" stroke="#8a7a5a" stroke-width="0.6" opacity="0.5"/>
+</svg>"""

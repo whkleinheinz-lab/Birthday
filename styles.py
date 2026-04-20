@@ -1,6 +1,6 @@
 CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 
 /* Force light color scheme regardless of user's system preference */
 :root { color-scheme: light only; }
@@ -55,10 +55,11 @@ div[data-testid="stAppViewContainer"] > section > div:first-child { padding-top:
     letter-spacing: 5px; text-transform: uppercase; color: #b8a97a; margin-bottom: 1rem;
 }
 .hero-title {
-    font-family: 'Cormorant Garamond', serif; font-size: 3.2rem;
-    font-weight: 300; color: #fdfcf8; line-height: 1.15; margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif; font-size: 3.4rem;
+    font-weight: 500; color: #fdfcf8; line-height: 1.15; margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
 }
-.hero-title em { font-style: italic; color: #b8a97a; }
+.hero-title em { font-style: italic; font-weight: 400; color: #b8a97a; }
 .gold-line { width: 80px; height: 1px; background: #b8a97a; margin: 1rem auto; }
 .hero-sub {
     font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
@@ -94,7 +95,7 @@ div[data-testid="stAppViewContainer"] > section > div:first-child { padding-top:
 .content-left { flex: 1; border-right: 1px solid #c8b882; padding-right: 1.5rem; }
 .content-right { flex: 1; border-left: 1px solid #c8b882; padding-left: 1.5rem; }
 .icon-col { width: 90px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; padding-top: .25rem; }
-.day-name { font-size: 1.4rem; font-weight: 400; color: #1a2e1a; margin-bottom: .8rem; }
+.day-name { font-family: 'Playfair Display', 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 500; color: #1a2e1a; margin-bottom: .8rem; letter-spacing: 0.3px; }
 .event-row { display: flex; gap: 1rem; margin-bottom: .55rem; align-items: baseline; }
 .event-time { font-size: 0.72rem; letter-spacing: 1px; color: #8b7a5a; min-width: 68px; flex-shrink: 0; }
 .event-desc { font-size: 0.92rem; color: #2c2c2a; line-height: 1.7; }

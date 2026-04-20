@@ -3,10 +3,45 @@ CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 
 /* Force light color scheme regardless of user's system preference */
-:root { color-scheme: light only; }
-html, body { color-scheme: light only; background-color: #fdfcf8 !important; }
+:root {
+    color-scheme: light only !important;
+    --background-color: #fdfcf8 !important;
+    --default-backgroundColor: #fdfcf8 !important;
+    --secondary-background-color: #f0ebe0 !important;
+    --text-color: #1a2e1a !important;
+}
+html, body {
+    color-scheme: light only !important;
+    background-color: #fdfcf8 !important;
+    color: #1a2e1a !important;
+}
 html, body, [class*="css"] { font-family: 'Cormorant Garamond', Georgia, serif; }
 .main .block-container { padding: 0 !important; max-width: 820px !important; }
+
+/* Force light backgrounds on every Streamlit container, even under dark-mode OS/browsers */
+.stApp,
+[data-testid="stApp"],
+[data-testid="stAppViewContainer"],
+[data-testid="stAppViewBlockContainer"],
+[data-testid="stMain"],
+section.main,
+.main,
+.block-container {
+    background-color: #fdfcf8 !important;
+    color: #1a2e1a !important;
+    color-scheme: light only !important;
+}
+
+/* Override dark-mode preference specifically */
+@media (prefers-color-scheme: dark) {
+    :root, html, body,
+    .stApp, [data-testid="stApp"], [data-testid="stAppViewContainer"],
+    [data-testid="stMain"], section.main, .main, .block-container {
+        background-color: #fdfcf8 !important;
+        color: #1a2e1a !important;
+        color-scheme: light only !important;
+    }
+}
 
 /* --- Hide Streamlit chrome so the invitation looks standalone --- */
 #MainMenu, #MainMenu * { visibility: hidden !important; display: none !important; }
